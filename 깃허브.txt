@@ -5,17 +5,17 @@ print('1부터 20까지의 숫자가 있습니다.')
 
 
 for aTaken in range(1, 7): //7번의 기회를 준다.
-print('숫자가 정해졌습니다.)
+    print('숫자가 정해졌습니다.')
     print('예상하는 숫자를 입력하세요.')
     a = int(input()) //예상하는 숫자를 입력 받는다.
 
     if a < ranNum:
         print('입력한 숫자가 너무 작습니다..')//랜덤값과 입력받은 값을 비교하여 랜덤값보다 작을시 문자 출력
-    elif a > ranNumr:
+    elif a > ranNum:
         print('입력한 숫자가 너무 큽니다.')//랜덤값과 입력받은 값을 비교하여 랜덤값보다 클시 문자 출력
     else:
         break
-if a == ranNumr: //입력한 값과 같을시에 정답 프린트
+if a == ranNum: //입력한 값과 같을시에 정답 프린트
     print('입력한 ' + str(a) + '는 정답입니다..')
 else:
     print('기회가 끝났습니다. 정해진 숫자는 ' + str(ranNum) + '입니다.') //기회가 끌날때 까지 못맞추면 답을 알려주고 멈춤
